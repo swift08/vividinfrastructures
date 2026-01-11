@@ -37,7 +37,7 @@ const Comparison = () => {
   return (
     <section
       ref={sectionRef}
-      className="py-12 md:py-16 bg-gradient-to-b from-background via-muted/30 to-background relative overflow-hidden"
+      className="py-8 md:py-10 bg-gradient-to-b from-background via-muted/30 to-background relative overflow-hidden"
     >
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -55,7 +55,7 @@ const Comparison = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
-        <div className="text-center mb-8 md:mb-12">
+        <div className="text-center mb-6 md:mb-8">
           <div
             className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-vivid-gold/10 border border-vivid-gold/30 mb-6 transition-all duration-700 ${
               sectionVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"

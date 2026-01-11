@@ -151,7 +151,7 @@ const Team = () => {
     <section
       id="team"
       ref={sectionRef}
-      className="py-12 md:py-20 bg-gradient-to-b from-vivid-charcoal-dark via-vivid-charcoal to-vivid-charcoal-dark text-secondary-foreground relative overflow-hidden"
+      className="py-8 md:py-12 bg-gradient-to-b from-vivid-charcoal-dark via-vivid-charcoal to-vivid-charcoal-dark text-secondary-foreground relative overflow-hidden"
     >
       {/* Animated Blueprint Background Canvas */}
       <canvas
@@ -170,7 +170,7 @@ const Team = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header with Construction Theme */}
-        <div className="text-center mb-8 md:mb-12">
+        <div className="text-center mb-6 md:mb-8">
           <div
             className={`inline-flex items-center gap-3 px-6 py-3 rounded-full bg-vivid-gold/10 border-2 border-vivid-gold/30 backdrop-blur-sm mb-6 transition-all duration-700 ${
               sectionVisible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10"
@@ -192,7 +192,7 @@ const Team = () => {
         </div>
 
         {/* Leadership Team - Construction Site Badge Style */}
-        <div className="mb-12 md:mb-16">
+        <div className="mb-8 md:mb-10">
           <div className="text-center mb-8 md:mb-10">
             <h3 className="text-2xl md:text-3xl font-bold text-vivid-gold font-heading mb-2">
               Site Leadership
@@ -263,7 +263,7 @@ const Team = () => {
         </div>
 
         {/* Technical Advisors - Blueprint Card Style */}
-        <div className="mb-12 md:mb-16">
+        <div className="mb-8 md:mb-10">
           <div className="text-center mb-8 md:mb-10">
             <h3 className="text-2xl md:text-3xl font-bold text-vivid-gold font-heading mb-2">
               Technical Advisors

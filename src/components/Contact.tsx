@@ -10,7 +10,7 @@ const Contact = () => {
     <section
       id="contact"
       ref={sectionRef}
-      className="py-12 md:py-16 bg-vivid-charcoal-dark text-secondary-foreground relative overflow-hidden"
+      className="py-8 md:py-10 bg-vivid-charcoal-dark text-secondary-foreground relative overflow-hidden"
     >
       {/* Animated Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">

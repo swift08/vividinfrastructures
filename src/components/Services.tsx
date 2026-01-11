@@ -80,7 +80,7 @@ const Services = () => {
     <section
       id="services"
       ref={sectionRef}
-      className="py-12 md:py-16 bg-secondary text-secondary-foreground relative overflow-hidden"
+      className="py-8 md:py-10 bg-secondary text-secondary-foreground relative overflow-hidden"
     >
       {/* Animated Background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -98,7 +98,7 @@ const Services = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
-        <div className="text-center mb-8 md:mb-12">
+        <div className="text-center mb-6 md:mb-8">
           <h2
             className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-4 font-heading text-background transition-all duration-700 ${
               sectionVisible

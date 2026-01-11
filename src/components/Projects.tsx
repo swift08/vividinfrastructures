@@ -37,11 +37,11 @@ const Projects = () => {
     <section
       id="projects"
       ref={sectionRef}
-      className="py-12 md:py-16 bg-background relative overflow-hidden"
+      className="py-8 md:py-10 bg-background relative overflow-hidden"
     >
       <div className="container mx-auto px-4">
         <h2
-          className={`text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 font-heading text-foreground transition-all duration-700 ${
+          className={`text-3xl md:text-4xl font-bold text-center mb-6 md:mb-8 font-heading text-foreground transition-all duration-700 ${
             sectionVisible
               ? "opacity-100 translate-y-0"
               : "opacity-0 -translate-y-10"

@@ -22,7 +22,7 @@ const About = () => {
     <section
       id="about"
       ref={sectionRef}
-      className="py-12 md:py-16 bg-gradient-to-b from-muted/50 via-background to-muted/30 relative overflow-hidden"
+      className="py-8 md:py-10 bg-gradient-to-b from-muted/50 via-background to-muted/30 relative overflow-hidden"
     >
       {/* Background Decorative Elements */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
