@@ -435,17 +435,37 @@ const Team = () => {
             </h3>
             <p className="text-white/60 text-sm uppercase tracking-wider">Site Supervision</p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 max-w-6xl mx-auto">
-            {projectManagers.map((member, index) => (
-              <TeamMemberCard
-                key={member.name}
-                member={member}
-                size="small"
-                objectPosition="center 60%"
-                showTopBar
-                delay={1200 + index * 100}
-              />
-            ))}
+          
+          {/* Main Project Manager - Pavan (Top Center) */}
+          <div className="max-w-md mx-auto mb-8">
+            {(() => {
+              const mainPM = projectManagers.find(m => m.name === "Pavan K Prakash");
+              return mainPM ? (
+                <TeamMemberCard
+                  member={mainPM}
+                  size="medium"
+                  objectPosition="center 60%"
+                  showTopBar
+                  delay={1200}
+                />
+              ) : null;
+            })()}
+          </div>
+
+          {/* Other Project Managers - Karthik, Manoj, Tejas, Dhanush (Bottom Row) */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto">
+            {projectManagers
+              .filter((member) => member.name !== "Pavan K Prakash")
+              .map((member, index) => (
+                <TeamMemberCard
+                  key={member.name}
+                  member={member}
+                  size="small"
+                  objectPosition="center 60%"
+                  showTopBar
+                  delay={1500 + index * 100}
+                />
+              ))}
           </div>
         </div>
       </div>
