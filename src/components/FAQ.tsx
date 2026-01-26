@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "WHAT IS THE SQUARE FOOT COST OF CONSTRUCTION?",
     answer:
-      "The cost of construction starts from 1999* per SQFT and ranges upto 2499* per SQFT but you will be surprised to see the quality of materials used and the workmanship at the price you pay us compared to other competitors.",
+      "The cost of construction starts from 2250* per SQFT and ranges upto 2750* per SQFT but you will be surprised to see the quality of materials used and the workmanship at the price you pay us compared to other competitors.",
   },
   {
     question: "COMPANY IS NEWLY ESTABLISHED IS THE TEAM EXPERIENCED?",

@@ -12,6 +12,20 @@ import project10 from "@/assets/projects/14.jpg";
 import project11 from "@/assets/projects/15.jpg";
 import project12 from "@/assets/projects/20.jpg";
 import project13 from "@/assets/projects/21.jpg";
+import project14 from "@/assets/projects/Mr. Chethan's Residence (2).jpeg";
+import project15 from "@/assets/projects/Mr. Chethan's Residence.jpeg";
+import project16 from "@/assets/projects/Mr. Manuprasad's Residence.jpeg";
+import project17 from "@/assets/projects/Mr. Paramesh's Residence.jpeg";
+import project18 from "@/assets/projects/MR. PRUTHVI'S RESIDENCE.png";
+import project19 from "@/assets/projects/Mr. Raghu's Residence.jpeg";
+import project20 from "@/assets/projects/Mr. Shivshankar's Residence.jpeg";
+import project21 from "@/assets/projects/Mr. Srinivas Residence.jpeg";
+import project22 from "@/assets/projects/MR.AMARESH'S PROPOSED ELEVATION.png";
+import project23 from "@/assets/projects/MR.SADASHIVAIAH'S RESIDENCE ELEVATION.png";
+import project24 from "@/assets/projects/Mr.Srinivas residence.jpeg";
+import project25 from "@/assets/projects/WhatsApp Image 2026-01-12 at 2.13.32 PM (1).jpeg";
+import project26 from "@/assets/projects/WhatsApp Image 2026-01-12 at 2.13.32 PM (2).jpeg";
+import project27 from "@/assets/projects/WhatsApp Image 2026-01-12 at 2.13.32 PM.jpeg";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 const projects = [
@@ -28,6 +42,20 @@ const projects = [
   { name: "Project Gallery 5", image: project11 },
   { name: "Project Gallery 6", image: project12 },
   { name: "Project Gallery 7", image: project13 },
+  { name: "Mr. Chethan's Residence", image: project14 },
+  { name: "Mr. Chethan's Residence", image: project15 },
+  { name: "Mr. Manuprasad's Residence", image: project16 },
+  { name: "Mr. Paramesh's Residence", image: project17 },
+  { name: "Mr. Pruthvi's Residence", image: project18 },
+  { name: "Mr. Raghu's Residence", image: project19 },
+  { name: "Mr. Shivshankar's Residence", image: project20 },
+  { name: "Mr. Srinivas Residence", image: project21 },
+  { name: "Mr. Amaresh's Proposed Elevation", image: project22 },
+  { name: "Mr. Sadashivaiah's Residence Elevation", image: project23 },
+  { name: "Mr. Srinivas Residence", image: project24 },
+  { name: "Project Gallery 8", image: project25 },
+  { name: "Project Gallery 9", image: project26 },
+  { name: "Project Gallery 10", image: project27 },
 ];
 
 const Projects = () => {

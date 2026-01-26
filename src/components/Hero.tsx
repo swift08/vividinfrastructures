@@ -249,7 +249,7 @@ const Hero = () => {
           {/* Stats - Better Integration */}
           <div className="grid grid-cols-3 gap-8 pt-12 mt-12 border-t border-white/10 max-w-2xl mx-auto animate-fade-up-delayed-3">
             <div className="text-center">
-              <div className="text-4xl font-bold text-vivid-gold mb-1">10+</div>
+              <div className="text-4xl font-bold text-vivid-gold mb-1">12+</div>
               <div className="text-sm text-white/70 uppercase tracking-wider">Projects</div>
             </div>
             <div className="text-center">

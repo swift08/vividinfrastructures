@@ -4,7 +4,7 @@ import logo from "@/assets/logo.jpeg";
 
 const stats = [
   { label: "Established", value: "2022", icon: Calendar, count: false },
-  { label: "Projects", value: "10+", icon: Building2, count: true, end: 10 },
+  { label: "Projects", value: "12+", icon: Building2, count: true, end: 12 },
   { label: "Satisfaction", value: "100%", icon: Heart, count: true, end: 100 },
   { label: "Experience", value: "7+ Years", icon: Target, count: true, end: 7 },
 ];
@@ -14,7 +14,7 @@ const About = () => {
   const { ref: imageRef, isVisible: imageVisible } = useScrollAnimation();
   const { ref: contentRef, isVisible: contentVisible } = useScrollAnimation();
 
-  const projectsCount = useCountUp(10, 1500, 0);
+  const projectsCount = useCountUp(12, 1500, 0);
   const satisfactionCount = useCountUp(100, 2000, 0);
   const experienceCount = useCountUp(7, 1500, 0);
 
@@ -142,10 +142,10 @@ const About = () => {
               >
                 At <strong className="text-primary font-semibold">Vivid Infrastructures</strong>, we
                 don't just build structures – we <strong className="text-vivid-gold">build trust</strong>.
-                Established on <strong className="text-primary">October 5th, 2022</strong>, our passionate
-                and client-focused team is redefining construction with{" "}
-                <strong className="text-foreground">transparency, reliability, and flexibility</strong> at
-                the core of everything we do.
+                Established on <strong className="text-primary">October 5th, 2022</strong>, we are passionate
+                and client-centric team is redefining construction with{" "}
+                <strong className="text-foreground">transparency, reliability and flexibility</strong> at
+                the core of every service we provide.
               </p>
               <p
                 className={`text-lg text-muted-foreground leading-relaxed transition-all duration-700 delay-500 ${
