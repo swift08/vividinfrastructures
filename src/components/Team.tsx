@@ -9,7 +9,6 @@ import avinashPhoto from "@/assets/our team/Dr. Avinash Gornale.jpeg";
 import nareshPhoto from "@/assets/our team/DR. B G Naresh Kumar .jpeg";
 import pavanPhoto from "@/assets/our team/Pavan K Prakash.jpeg";
 import karthikPhoto from "@/assets/our team/Er Karthik.jpeg";
-import manojPhoto from "@/assets/our team/Er Manoj.jpeg";
 import tejasPhoto from "@/assets/our team/Er Tejas.jpeg";
 import dhanushPhoto from "@/assets/our team/Er. Dhanush.jpeg";
 
@@ -78,11 +77,6 @@ const projectManagers: TeamMember[] = [
     name: "Karthik MK",
     role: "Site Supervision",
     photo: karthikPhoto,
-  },
-  {
-    name: "Manoj",
-    role: "Site Supervision",
-    photo: manojPhoto,
   },
   {
     name: "Tejas",
@@ -452,8 +446,8 @@ const Team = () => {
             })()}
           </div>
 
-          {/* Other Project Managers - Karthik, Manoj, Tejas, Dhanush (Bottom Row) */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto">
+          {/* Other Project Managers - Karthik, Tejas, Dhanush (Bottom Row) */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto">
             {projectManagers
               .filter((member) => member.name !== "Pavan K Prakash")
               .map((member, index) => (

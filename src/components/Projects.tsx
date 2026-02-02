@@ -1,28 +1,30 @@
-// Import project images - Main projects
-import project1 from "@/assets/projects/3.jpg";
-import project5 from "@/assets/projects/11.jpg";
-import project15 from "@/assets/projects/Mr. Chethan's Residence.jpeg";
-import project16 from "@/assets/projects/Mr. Manuprasad's Residence 1.jpeg";
-import project17 from "@/assets/projects/Mr. Paramesh's Residence.jpeg";
-import project18 from "@/assets/projects/MR. PRUTHVI'S RESIDENCE.png";
-import project19 from "@/assets/projects/Mr. Raghu's Residence.jpeg";
-import project20 from "@/assets/projects/Mr. Shivshankar's Residence.jpeg";
-import project21 from "@/assets/projects/Mr. Srinivas Residence.jpeg";
-import project22 from "@/assets/projects/MR.AMARESH'S PROPOSED ELEVATION.png";
-import project23 from "@/assets/projects/MR.SADASHIVAIAH'S RESIDENCE ELEVATION.png";
-import project24 from "@/assets/projects/Mrs.Manjula's Residence .jpeg";
-import project28 from "@/assets/projects/Mr Narendra Simha's Residence.jpeg";
-// Import project images - Others (Gallery)
-import project7 from "@/assets/projects/12 (1).jpg";
-import project8 from "@/assets/projects/12 (2).jpg";
-import project9 from "@/assets/projects/13.jpg";
-import project10 from "@/assets/projects/14.jpg";
-import project11 from "@/assets/projects/15.jpg";
-import project12 from "@/assets/projects/20.jpg";
-import project13 from "@/assets/projects/21.jpg";
-import project25 from "@/assets/projects/WhatsApp Image 2026-01-12 at 2.13.32 PM (1).jpeg";
-import project26 from "@/assets/projects/WhatsApp Image 2026-01-12 at 2.13.32 PM (2).jpeg";
-import project27 from "@/assets/projects/WhatsApp Image 2026-01-12 at 2.13.32 PM.jpeg";
+// Import all project images
+// Named residences / elevations
+import imgNarendra from "@/assets/projects/Mr Narendra Simha's Residence.jpeg";
+import imgManuprasad from "@/assets/projects/Mr. Manuprasad's Residence 1.jpeg";
+import imgManjula from "@/assets/projects/Mrs.Manjula's Residence .jpeg";
+import imgYatish from "@/assets/projects/11.jpg";
+import imgChethan from "@/assets/projects/Mr. Chethan's Residence.jpeg";
+import imgParamesh from "@/assets/projects/Mr. Paramesh's Residence.jpeg";
+import imgPruthvi from "@/assets/projects/MR. PRUTHVI'S RESIDENCE.png";
+import imgRaghu from "@/assets/projects/Mr. Raghu's Residence.jpeg";
+import imgShivshankar from "@/assets/projects/Mr. Shivshankar's Residence.jpeg";
+import imgSrinivas from "@/assets/projects/Mr. Srinivas Residence.jpeg";
+import imgAmaresh from "@/assets/projects/MR.AMARESH'S PROPOSED ELEVATION.png";
+import imgSadashivaiah from "@/assets/projects/MR.SADASHIVAIAH'S RESIDENCE ELEVATION.png";
+
+// Gallery images
+import gallery1 from "@/assets/projects/3.jpg";
+import gallery2 from "@/assets/projects/12 (1).jpg";
+import gallery3 from "@/assets/projects/12 (2).jpg";
+import gallery4 from "@/assets/projects/13.jpg";
+import gallery5 from "@/assets/projects/14.jpg";
+import gallery6 from "@/assets/projects/15.jpg";
+import gallery7 from "@/assets/projects/20.jpg";
+import gallery8 from "@/assets/projects/21.jpg";
+import gallery9 from "@/assets/projects/WhatsApp Image 2026-01-12 at 2.13.32 PM (1).jpeg";
+import gallery10 from "@/assets/projects/WhatsApp Image 2026-01-12 at 2.13.32 PM (2).jpeg";
+import gallery11 from "@/assets/projects/WhatsApp Image 2026-01-12 at 2.13.32 PM.jpeg";
 import { useState } from "react";
 import {
   Dialog,
@@ -33,33 +35,33 @@ import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 
 // Main projects (named residences/elevations - no duplicates)
 const mainProjects = [
-  { name: "Mr. Chethan's Residence", image: project15 },
-  { name: "Mr. Narendra Simha's Residence", image: project28 },
-  { name: "Mr. Manuprasad's Residence", image: project16 },
-  { name: "Mr. Paramesh's Residence", image: project17 },
-  { name: "Mr. Pruthvi's Residence", image: project18 },
-  { name: "Mr. Raghu's Residence", image: project19 },
-  { name: "Mr. Shivshankar's Residence", image: project20 },
-  { name: "Mr. Srinivas Residence", image: project21 },
-  { name: "Mrs.Manjula's Residence", image: project24 },
-  { name: "Mr. Amaresh's Proposed Elevation", image: project22 },
-  { name: "Mr. Sadashivaiah's Residence Elevation", image: project23 },
+  { name: "Mr. Narendra Simha's Residence", image: imgNarendra },
+  { name: "Mr. Manuprasad's Residence", image: imgManuprasad },
+  { name: "Mrs.Manjula's Residence", image: imgManjula },
+  { name: "Mr. Chethan's Residence", image: imgChethan },
+  { name: "Mr. Paramesh's Residence", image: imgParamesh },
+  { name: "Mr. Pruthvi's Residence", image: imgPruthvi },
+  { name: "Mr. Raghu's Residence", image: imgRaghu },
+  { name: "Mr. Shivshankar's Residence", image: imgShivshankar },
+  { name: "Mr. Srinivas Residence", image: imgSrinivas },
+  { name: "Mr. Amaresh's Proposed Elevation", image: imgAmaresh },
+  { name: "Mr. Sadashivaiah's Residence Elevation", image: imgSadashivaiah },
 ];
 
-// Others section - Project Gallery items
+// Others section - Project Gallery items (no named residences)
 const otherProjects = [
-  { name: "Gallery 1", image: project7 },
-  { name: "Gallery 2", image: project8 },
-  { name: "Gallery 3", image: project9 },
-  { name: "Gallery 4", image: project10 },
-  { name: "Gallery 5", image: project11 },
-  { name: "Gallery 6", image: project12 },
-  { name: "Gallery 7", image: project13 },
-  { name: "Gallery 8", image: project25 },
-  { name: "Gallery 9", image: project26 },
-  { name: "Gallery 10", image: project27 },
-  { name: "Gallery 11", image: project1 },
-  { name: "Mr. Yatish Residence", image: project5 },
+  { name: "Project Gallery 1", image: gallery1 },
+  { name: "Project Gallery 2", image: gallery2 },
+  { name: "Project Gallery 3", image: gallery3 },
+  { name: "Project Gallery 4", image: gallery4 },
+  { name: "Project Gallery 5", image: gallery5 },
+  { name: "Project Gallery 6", image: gallery6 },
+  { name: "Project Gallery 7", image: gallery7 },
+  { name: "Project Gallery 8", image: gallery8 },
+  { name: "Project Gallery 9", image: gallery9 },
+  { name: "Project Gallery 10", image: gallery10 },
+  { name: "Project Gallery 11", image: gallery11 },
+  { name: "Mr. Yatish Residence", image: imgYatish },
 ];
 
 type ProjectItem = { name: string; image: string };
@@ -78,6 +80,7 @@ const ProjectCard = ({
   onCardClick?: (project: ProjectItem) => void;
 }) => {
   const { ref, isVisible } = useScrollAnimation({ threshold: 0.1 });
+
   return (
     <div
       ref={ref}
@@ -147,7 +150,7 @@ const Projects = () => {
           }`}
           style={{ transitionDelay: "100ms" }}
         >
-          Click on any photo to view it in full size.
+          For a better view of the projects, click on any card to view the photo.
         </p>
 
         {/* Main Projects */}
@@ -163,7 +166,7 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Others Section - click to show photos */}
+        {/* Others Section - Project Gallery */}
         <div className="mt-12 md:mt-16">
           <button
             type="button"
